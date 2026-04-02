@@ -1,4 +1,4 @@
-# TanFinance: Finance Dashboard UI
+# TanFinance: Finance Dashboard 
 
 > Professional frontend finance dashboard with role-based simulation, analytics, and transaction management
 
@@ -79,7 +79,7 @@ npm run preview
 ## Project Structure
 
 ```text
-finance-dashboard-ui
+finance-dashboard
 |- public
 |- src
 |  |- components
