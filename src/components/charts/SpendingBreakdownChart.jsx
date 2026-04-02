@@ -12,8 +12,8 @@ const colors = ['#1d4ed8', '#0f766e', '#f59e0b', '#ef4444', '#7c3aed', '#0ea5e9'
 
 function SpendingBreakdownChart({ data }) {
   return (
-    <div className="h-72 w-full">
-      <ResponsiveContainer>
+    <div className="h-72 w-full min-w-0">
+      <ResponsiveContainer width="100%" height="100%">
         <PieChart>
           <Pie
             data={data}

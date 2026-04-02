@@ -6,7 +6,7 @@ const SpendingBreakdownChart = lazy(() => import('./charts/SpendingBreakdownChar
 function ChartsSection({ trendData, categoryData }) {
   return (
     <section className="grid gap-5 xl:grid-cols-5">
-      <article className="rounded-2xl border border-slate-200/70 bg-white p-5 shadow-sm xl:col-span-3 dark:border-slate-700 dark:bg-slate-900">
+      <article className="min-w-0 rounded-2xl border border-slate-200/70 bg-white p-5 shadow-sm xl:col-span-3 dark:border-slate-700 dark:bg-slate-900">
         <div className="mb-5 flex items-center justify-between">
           <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
             Balance Trend
@@ -28,7 +28,7 @@ function ChartsSection({ trendData, categoryData }) {
         )}
       </article>
 
-      <article className="rounded-2xl border border-slate-200/70 bg-white p-5 shadow-sm xl:col-span-2 dark:border-slate-700 dark:bg-slate-900">
+      <article className="min-w-0 rounded-2xl border border-slate-200/70 bg-white p-5 shadow-sm xl:col-span-2 dark:border-slate-700 dark:bg-slate-900">
         <div className="mb-5 flex items-center justify-between">
           <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
             Spending Breakdown
