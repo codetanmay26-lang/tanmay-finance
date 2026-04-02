@@ -226,15 +226,15 @@ function App() {
   if (!isAuthenticated) {
     return (
       <div className={darkMode ? 'dark' : ''}>
-        <div className="min-h-screen bg-[radial-gradient(circle_at_6%_10%,#dbeafe,transparent_34%),radial-gradient(circle_at_96%_8%,#fde68a,transparent_30%),radial-gradient(circle_at_60%_0%,#ddd6fe,transparent_30%),#eef2ff] px-4 py-6 text-slate-900 dark:bg-[radial-gradient(circle_at_6%_10%,#1e1b4b,transparent_34%),radial-gradient(circle_at_96%_8%,#78350f,transparent_30%),radial-gradient(circle_at_60%_0%,#0f172a,transparent_30%),#020617] dark:text-slate-100">
+        <div className="min-h-screen bg-[radial-gradient(circle_at_6%_10%,#dbeafe,transparent_34%),radial-gradient(circle_at_96%_8%,#fde68a,transparent_30%),radial-gradient(circle_at_60%_0%,#ddd6fe,transparent_30%),#eef2ff] px-3 py-4 text-slate-900 dark:bg-[radial-gradient(circle_at_6%_10%,#1e1b4b,transparent_34%),radial-gradient(circle_at_96%_8%,#78350f,transparent_30%),radial-gradient(circle_at_60%_0%,#0f172a,transparent_30%),#020617] dark:text-slate-100 sm:px-4 sm:py-6">
           {cursorOverlay}
 
-          <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
+          <div className="mx-auto flex w-full max-w-7xl flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-slate-400">
                 Tanmay Sharma
               </p>
-              <h1 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
+              <h1 className="mt-1 text-2xl font-semibold tracking-tight sm:mt-2 sm:text-4xl">
                 Professional Finance Dashboard
               </h1>
             </div>
@@ -250,27 +250,27 @@ function App() {
             </div>
           </div>
 
-          <main className="mx-auto mt-8 w-full max-w-6xl">
-            <section className="overflow-hidden rounded-3xl border border-slate-200/80 bg-white/95 shadow-[0_20px_45px_rgba(15,23,42,0.1)] backdrop-blur dark:border-slate-700 dark:bg-slate-900/90">
+          <main className="mx-auto mt-5 w-full max-w-6xl sm:mt-8">
+            <section className="overflow-hidden rounded-2xl border border-slate-200/80 bg-white/95 shadow-[0_20px_45px_rgba(15,23,42,0.1)] backdrop-blur dark:border-slate-700 dark:bg-slate-900/90 sm:rounded-3xl">
               <div className="grid gap-0 lg:grid-cols-[1.05fr_0.95fr]">
-                <div className="p-8 sm:p-12">
+                <div className="p-5 sm:p-12">
                   <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }}>
                     <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500 dark:text-slate-400">
                       Finance Dashboard
                     </p>
-                    <h2 className="mt-4 max-w-xl text-4xl font-semibold tracking-tight sm:text-5xl">
+                    <h2 className="mt-3 max-w-xl text-3xl font-semibold tracking-tight sm:mt-4 sm:text-5xl">
                       Track finances with a clear dashboard flow
                     </h2>
-                    <p className="mt-4 max-w-xl text-slate-600 dark:text-slate-300">
+                    <p className="mt-3 max-w-xl text-sm text-slate-600 dark:text-slate-300 sm:mt-4 sm:text-base">
                       Jump straight into the dashboard as a demo admin or user. The flow stays
                       simple, the design stays clean, and the rupee cursor stays visible everywhere.
                     </p>
 
-                    <div className="mt-8 flex flex-wrap items-center gap-3">
+                    <div className="mt-6 grid gap-3 sm:mt-8 sm:flex sm:flex-wrap sm:items-center">
                       <button
                         type="button"
                         onClick={() => handleQuickLogin('admin@tanfinanceinc.com', 'Admin@123')}
-                        className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-6 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-white transition hover:bg-slate-700 dark:bg-emerald-500 dark:text-slate-900 dark:hover:bg-emerald-400"
+                        className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-white transition hover:bg-slate-700 dark:bg-emerald-500 dark:text-slate-900 dark:hover:bg-emerald-400 sm:w-auto sm:px-6"
                       >
                         Continue as Admin
                         <ArrowRight size={16} />
@@ -278,7 +278,7 @@ function App() {
                       <button
                         type="button"
                         onClick={() => handleQuickLogin('user@tanfinanceinc.com', 'User@123')}
-                        className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-slate-700 transition hover:bg-slate-100 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
+                        className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-slate-700 transition hover:bg-slate-100 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800 sm:w-auto sm:px-6"
                       >
                         Continue as User
                       </button>
@@ -291,7 +291,7 @@ function App() {
                   initial={{ opacity: 0, y: 16 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.08 }}
-                  className="border-t border-slate-200 bg-gradient-to-br from-slate-50 via-white to-sky-50 p-6 dark:border-slate-700 dark:from-slate-900 dark:via-slate-900 dark:to-slate-800 lg:border-l lg:border-t-0 lg:p-8"
+                  className="border-t border-slate-200 bg-gradient-to-br from-slate-50 via-white to-sky-50 p-4 dark:border-slate-700 dark:from-slate-900 dark:via-slate-900 dark:to-slate-800 lg:border-l lg:border-t-0 lg:p-8"
                 >
                   <div className="flex items-center justify-between">
                     <p className="text-xs uppercase tracking-[0.14em] text-slate-500 dark:text-slate-400">
@@ -300,13 +300,13 @@ function App() {
                     <Sparkles size={16} className="text-slate-500 dark:text-slate-300" />
                   </div>
 
-                  <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                  <div className="mt-4 grid gap-3 sm:mt-6 sm:grid-cols-2">
                     <div className="rounded-2xl border border-slate-200 bg-white p-4 dark:border-slate-700 dark:bg-slate-900">
                       <div className="mb-4 flex items-center justify-between">
                         <span className="text-sm font-medium text-slate-700 dark:text-slate-200">Cash Flow</span>
                         <span className="text-xs font-semibold text-emerald-600 dark:text-emerald-400">+12%</span>
                       </div>
-                      <svg viewBox="0 0 260 90" className="h-20 w-full">
+                      <svg viewBox="0 0 260 90" className="h-16 w-full sm:h-20">
                         <defs>
                           <linearGradient id="flowLine" x1="0" x2="1" y1="0" y2="0">
                             <stop offset="0%" stopColor="#38bdf8" />
@@ -330,14 +330,14 @@ function App() {
                       <div className="flex items-end gap-2 pt-2">
                         <div className="h-10 w-5 rounded-t-lg bg-sky-300 dark:bg-sky-500" />
                         <div className="h-14 w-5 rounded-t-lg bg-indigo-300 dark:bg-indigo-500" />
-                        <div className="h-18 w-5 rounded-t-lg bg-emerald-300 dark:bg-emerald-500" />
+                        <div className="h-16 w-5 rounded-t-lg bg-emerald-300 dark:bg-emerald-500" />
                         <div className="h-12 w-5 rounded-t-lg bg-amber-300 dark:bg-amber-500" />
                         <div className="h-20 w-5 rounded-t-lg bg-slate-900 dark:bg-slate-100" />
                       </div>
                     </div>
 
                     <div className="sm:col-span-2 rounded-2xl border border-slate-200 bg-white p-4 dark:border-slate-700 dark:bg-slate-900">
-                      <svg viewBox="0 0 520 170" className="h-36 w-full">
+                      <svg viewBox="0 0 520 170" className="h-24 w-full sm:h-36">
                         <defs>
                           <linearGradient id="heroGlow" x1="0" x2="1" y1="0" y2="0">
                             <stop offset="0%" stopColor="#38bdf8" />
