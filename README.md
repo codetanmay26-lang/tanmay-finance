@@ -100,6 +100,11 @@ finance-dashboard
 - Used mock authentication and mock data to simulate real product flow
 - Prioritized interview-readiness: clarity, usability, and clean code structure
 
+## UI Inspiration
+
+- Visual inspiration only (layout hierarchy, spacing, and admin-style presentation): https://www.behance.net/gallery/245002747/Minimal-Finance-Admin-Panel-UI-Kit/modules/1414904857
+- All code implementation in this project is original and built by me, including component architecture, state management, interactions, responsiveness, and chart logic.
+
 ## Author
 
 - Name: Tanmay Sharma
