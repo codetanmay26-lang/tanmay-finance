@@ -262,8 +262,7 @@ function App() {
                       Track finances with a clear dashboard flow
                     </h2>
                     <p className="mt-3 max-w-xl text-sm text-slate-600 dark:text-slate-300 sm:mt-4 sm:text-base">
-                      Jump straight into the dashboard as a demo admin or user. The flow stays
-                      simple, the design stays clean, and the rupee cursor stays visible everywhere.
+                      Jump straight into the dashboard as a demo admin or user.
                     </p>
 
                     <div className="mt-6 grid gap-3 sm:mt-8 sm:flex sm:flex-wrap sm:items-center">
